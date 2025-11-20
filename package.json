@@ -1,0 +1,10 @@
+{
+  "name": "techtutter-leetcode-solutions",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.13"
+  },
+  "packageManager": "pnpm@9.9.0"
+}
