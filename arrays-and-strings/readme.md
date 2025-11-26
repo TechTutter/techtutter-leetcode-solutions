@@ -10,6 +10,11 @@ x.length = 2;
 console.log(x); // -> [0,1]
 ```
 
+### Rotate array k times
+
+Double rotation. Full rotation + 2 partial rotations, see [189. Rotate Array](189.%20Rotate%20Array/solution.ts)
+Useful e.g. for truncating values in-place at the start, while preserving relative order.
+
 ### Useful Built-in Methods for arrays
 
 ```typescript
