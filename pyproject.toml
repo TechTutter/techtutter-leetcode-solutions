@@ -1,14 +1,11 @@
 [project]
-name = "techtutter-leetcode-solutions"
+name = "techtutter-leetocode-solutions"
 version = "0.1.0"
-description = "LeetCode solutions for interview preparation"
-requires-python = ">=3.9"
-dependencies = []
-
-[project.optional-dependencies]
-dev = [
-    "pytest>=7.0.0",
-    "pytest-cov>=4.0.0",
+description = "LeetCode problem solutions in Python for interview preparation"
+readme = "readme.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pytest>=9.0.2",
 ]
 
 [tool.pytest.ini_options]
@@ -16,13 +13,4 @@ testpaths = ["."]
 python_files = ["test_*.py", "*_test.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
-addopts = "-v --tb=short --import-mode=importlib"
-
-[tool.black]
-line-length = 100
-target-version = ['py39']
-
-[tool.ruff]
-line-length = 100
-target-version = "py39"
-
+addopts = "-q --import-mode=importlib"
