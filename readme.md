@@ -1,46 +1,124 @@
 # techtutter-leetocode-solutions
 
-# Key Takeaways
+# Guidelines
 
-## General
-
-### Pass By Reference and By Value
-
-In Python, everything is passed by object reference.
-
-- For **immutable types** (int, float, str, tuple): the function receives a reference, but since they're immutable, you can't modify them. Reassignment creates a new object locally.
-- For **mutable types** (list, dict, set): the function receives a reference to the same object, so modifications are visible outside.
-
-```python
-num = 4
-nums = [1, 2, 3]
-
-def my_func(num, nums):
-    num += 1  # Not preserved outside (int is immutable, creates new local object)
-    nums.append(4)  # Preserved (same referenced list is modified)
-    nums = []  # Not preserved outside (only the local reference changes)
+Use the makefile to create new exercises. E.g.
+```bash
+make exercise "999. Test Name"
 ```
 
-### In-place
-
-> An in-place operation on a list modifies the original item without changing its reference. Tied to [Pass By Reference and By Value](#pass-by-reference-and-by-value).
-
-**Practical rule:** -> You can't reassign the original value (e.g `nums = something_else`) but you can perform any other operation (e.g. `nums.append(...)`, `nums[:] = ...`)
-
-### Bit Shift Operators (>> and <<)
-
-Shift by N bits. More efficient on CPU level.
-Also automatically truncate (no need to do floor). This is because of bit nature.
-
-```python
-x = 10  # 1010
-print(x >> 1)  # 0101 -> 5
-print(x >> 2)  # 0010 -> 2
-print(x >> 3)  # 0001 -> 1
-print(x >> 4)  # 0000 -> 0
+Solve the exercise inside solution.py and run the tests with pytest.
+```bash
+make test leetproblems/1.\ Two\ Sum/
 ```
 
-- `x >> 1` is equal to `x // 2` (integer division)
-- `x << 1` is equal to `x * 2`
+# Topics
 
-## Arrays And Strings - See [readme.md](./arrays-and-strings/readme.md)
+Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
+
+## Array
+- [1. Two Sum](./leetproblems/1.%20Two%20Sum/)
+- [14. Longest Common Prefix](./leetproblems/14.%20Longest%20Common%20Prefix/)
+- [15. 3Sum](./leetproblems/15.%203Sum/)
+- [26. Remove Duplicates from Sorted Array](./leetproblems/26.%20Remove%20Duplicates%20from%20Sorted%20Array/)
+- [27. Remove Element](./leetproblems/27.%20Remove%20Element/)
+- [36. Valid Sudoku](./leetproblems/36.%20Valid%20Sudoku/)
+- [42. Trapping Rain Water](./leetproblems/42.%20Trapping%20Rain%20Water/)
+- [45. Jump Game II](./leetproblems/45.%20Jump%20Game%20II/)
+- [54. Spiral Matrix](./leetproblems/54.%20Spiral%20Matrix/)
+- [55. Jump Game](./leetproblems/55.%20Jump%20Game/)
+- [80. Remove Duplicates from Sorted Array II](./leetproblems/80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II/)
+- [88. Merge Sorted Array](./leetproblems/88.%20Merge%20Sorted%20Array/)
+- [121. Best Time to Buy and Sell Stocks](./leetproblems/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stocks/)
+- [122. Best Time to Buy and Sell Stocks II](./leetproblems/122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stocks%20II/)
+- [134. Gas Station](./leetproblems/134.%20Gas%20Station/)
+- [135. Candy](./leetproblems/135.%20Candy/)
+- [169. Majority Element](./leetproblems/169.%20Majority%20Element/)
+- [189. Rotate Array](./leetproblems/189.%20Rotate%20Array/)
+- [209. Minimum Size Subarray Sum](./leetproblems/209.%20Minimum%20Size%20Subarray%20Sum/)
+- [274. H-Index](./leetproblems/274.%20H-Index/)
+
+## Hash Table
+- [1. Two Sum](./leetproblems/1.%20Two%20Sum/)
+- [3. Longest Substring Without Repeating Characters](./leetproblems/3.%20Longest%20Substring%20Without%20Repeating%20Characters/)
+- [12. Integer to Roman](./leetproblems/12.%20Integer%20to%20Roman/)
+- [13. Roman to Integer](./leetproblems/13.%20Roman%20to%20Integer/)
+- [15. 3Sum](./leetproblems/15.%203Sum/)
+- [36. Valid Sudoku](./leetproblems/36.%20Valid%20Sudoku/)
+- [169. Majority Element](./leetproblems/169.%20Majority%20Element/)
+- [202. Happy Number](./leetproblems/202.%20Happy%20Number/)
+- [205. Isomorphic Strings](./leetproblems/205.%20Isomorphic%20Strings/)
+- [242. Valid Anagram](./leetproblems/242.%20Valid%20Anagram/)
+- [290. Word Pattern](./leetproblems/290.%20Word%20Pattern/)
+
+## String
+- [3. Longest Substring Without Repeating Characters](./leetproblems/3.%20Longest%20Substring%20Without%20Repeating%20Characters/)
+- [12. Integer to Roman](./leetproblems/12.%20Integer%20to%20Roman/)
+- [13. Roman to Integer](./leetproblems/13.%20Roman%20to%20Integer/)
+- [14. Longest Common Prefix](./leetproblems/14.%20Longest%20Common%20Prefix/)
+- [20. Valid Parentheses](./leetproblems/20.%20Valid%20Parentheses/)
+- [28. Find the Index of the First Occurrence in a String](./leetproblems/28.%20Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/)
+- [58. Length of Last Word](./leetproblems/58.%20Length%20of%20Last%20Word/)
+- [125. Valid Palindrome](./leetproblems/125.%20Valid%20Palindrome/)
+- [205. Isomorphic Strings](./leetproblems/205.%20Isomorphic%20Strings/)
+- [242. Valid Anagram](./leetproblems/242.%20Valid%20Anagram/)
+- [290. Word Pattern](./leetproblems/290.%20Word%20Pattern/)
+- [392. Is Subsequence](./leetproblems/392.%20Is%20Subsequence/)
+
+## Two Pointers
+- [3. Longest Substring Without Repeating Characters](./leetproblems/3.%20Longest%20Substring%20Without%20Repeating%20Characters/)
+- [15. 3Sum](./leetproblems/15.%203Sum/)
+- [26. Remove Duplicates from Sorted Array](./leetproblems/26.%20Remove%20Duplicates%20from%20Sorted%20Array/)
+- [27. Remove Element](./leetproblems/27.%20Remove%20Element/)
+- [28. Find the Index of the First Occurrence in a String](./leetproblems/28.%20Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/)
+- [42. Trapping Rain Water](./leetproblems/42.%20Trapping%20Rain%20Water/)
+- [80. Remove Duplicates from Sorted Array II](./leetproblems/80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II/)
+- [88. Merge Sorted Array](./leetproblems/88.%20Merge%20Sorted%20Array/)
+- [125. Valid Palindrome](./leetproblems/125.%20Valid%20Palindrome/)
+- [189. Rotate Array](./leetproblems/189.%20Rotate%20Array/)
+- [202. Happy Number](./leetproblems/202.%20Happy%20Number/)
+- [392. Is Subsequence](./leetproblems/392.%20Is%20Subsequence/)
+
+## Math
+- [12. Integer to Roman](./leetproblems/12.%20Integer%20to%20Roman/)
+- [13. Roman to Integer](./leetproblems/13.%20Roman%20to%20Integer/)
+- [189. Rotate Array](./leetproblems/189.%20Rotate%20Array/)
+- [202. Happy Number](./leetproblems/202.%20Happy%20Number/)
+
+## Greedy
+- [12. Integer to Roman](./leetproblems/12.%20Integer%20to%20Roman/)
+- [45. Jump Game II](./leetproblems/45.%20Jump%20Game%20II/)
+- [55. Jump Game](./leetproblems/55.%20Jump%20Game/)
+- [122. Best Time to Buy and Sell Stocks II](./leetproblems/122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stocks%20II/)
+- [134. Gas Station](./leetproblems/134.%20Gas%20Station/)
+- [135. Candy](./leetproblems/135.%20Candy/)
+
+## Dynamic Programming
+- [42. Trapping Rain Water](./leetproblems/42.%20Trapping%20Rain%20Water/)
+- [45. Jump Game II](./leetproblems/45.%20Jump%20Game%20II/)
+- [55. Jump Game](./leetproblems/55.%20Jump%20Game/)
+- [121. Best Time to Buy and Sell Stocks](./leetproblems/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stocks/)
+- [122. Best Time to Buy and Sell Stocks II](./leetproblems/122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stocks%20II/)
+- [392. Is Subsequence](./leetproblems/392.%20Is%20Subsequence/)
+
+## Matrix
+- [36. Valid Sudoku](./leetproblems/36.%20Valid%20Sudoku/)
+- [54. Spiral Matrix](./leetproblems/54.%20Spiral%20Matrix/)
+
+## Sliding Window
+- [3. Longest Substring Without Repeating Characters](./leetproblems/3.%20Longest%20Substring%20Without%20Repeating%20Characters/)
+- [209. Minimum Size Subarray Sum](./leetproblems/209.%20Minimum%20Size%20Subarray%20Sum/)
+
+## Stack
+- [20. Valid Parentheses](./leetproblems/20.%20Valid%20Parentheses/)
+- [42. Trapping Rain Water](./leetproblems/42.%20Trapping%20Rain%20Water/)
+
+## Sorting
+- [15. 3Sum](./leetproblems/15.%203Sum/)
+- [88. Merge Sorted Array](./leetproblems/88.%20Merge%20Sorted%20Array/)
+- [169. Majority Element](./leetproblems/169.%20Majority%20Element/)
+- [242. Valid Anagram](./leetproblems/242.%20Valid%20Anagram/)
+- [274. H-Index](./leetproblems/274.%20H-Index/)
+
+## Simulation
+- [54. Spiral Matrix](./leetproblems/54.%20Spiral%20Matrix/)

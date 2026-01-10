@@ -9,9 +9,9 @@ exercise:
 		exit 1; \
 	fi; \
 	mkdir -p "$$EXERCISE_NAME"; \
-	touch "$$EXERCISE_NAME/readme.md"; \
-	touch "$$EXERCISE_NAME/solution.py"; \
-	cp solution_test_template.py "$$EXERCISE_NAME/solution_test.py"
+	echo "# $$EXERCISE_NAME" > "$$EXERCISE_NAME/readme.md"; \
+	cp solution_test_template.py "$$EXERCISE_NAME/solution_test.py"; \
+	cp solution_template.py "$$EXERCISE_NAME/solution.py"
 
 # Prevent Make from trying to execute the exercise name as a target
 %:
