@@ -17,7 +17,7 @@ exercise:
 
 update-readme:
 	@COUNT=$$(find leetproblems -mindepth 1 -maxdepth 1 -type d | wc -l | xargs); \
-	perl -i -pe "s/Total Solved: \d+ <!-- LEET_COUNT -->/Total Solved: $$COUNT <!-- LEET_COUNT -->/" README.md; \
+	perl -i -pe "s/Solved-\d+-00b8a3/Solved-$$COUNT-00b8a3/" README.md; \
 	echo "README.md updated with $$COUNT problems solved."
 
 # Prevent Make from trying to execute the exercise name as a target

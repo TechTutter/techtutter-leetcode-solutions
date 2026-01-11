@@ -1,22 +1,35 @@
-# techtutter-leetocode-solutions
+# LeetCode Solutions
 
-Total Solved: 33 <!-- LEET_COUNT -->
+> A collection of algorithmic challenges solved with a focus on clean code, efficiency, and automated workflow.
 
-Automatically updated with pre-commit hook or manually with make update-readme
+![LeetCode Total](https://img.shields.io/badge/Solved-33-00b8a3?style=for-the-badge&labelColor=24292e&logo=leetcode) <!-- LEET_COUNT -->
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Testing](https://img.shields.io/badge/Tests-Pytest-yellow?style=for-the-badge&logo=pytest)
 
-# Guidelines
+---
 
-Use the makefile to create new exercises. E.g.
+## 🛠️ Project Workflow
+
+This repository uses a custom automation system to maintain consistency and speed up the problem-solving process.
+
+### Creation & Setup
+To bootstrap a new challenge:
 ```bash
-make exercise "999. Test Name"
+make exercise "Number. Problem Title"
 ```
 
-Solve the exercise inside solution.py and run the tests with pytest.
+### Development & Testing
+Solutions are developed in Python and verified using `pytest`. Environment management is handled by `uv`:
 ```bash
 uv run pytest
 ```
 
-# Topic
+### Automation
+The repository includes a Git pre-commit hook that automatically updates the problem count in the README whenever a new solution is committed.
+
+---
+
+# Topics
 
 Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 
