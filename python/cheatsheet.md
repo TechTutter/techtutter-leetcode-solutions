@@ -367,6 +367,40 @@ print(1 if a > b else 2 if a < b else 0)
 x = 1 if a > b else 2
 ```
 
+### File Opening
+
+```python
+"""
+with statement ensures that the file is closed after the block is executed. 3 main ways to read content:
+    - f.read() to get the entire content
+    - f.readline() to get the first line, can be called multiple times to get the next lines
+    - for line in file: ... to iterate over lines
+"""
+with open("file.txt", "r") as file:
+    content = file.read()
+
+"""
+To write, can specify:
+- "x" only create file if it does not exist
+- "w" either create new file or truncate existing file
+- "a" append to file if it exists
+"""
+with open("file.txt", "a") as file:
+    file.write("Hello World")
+
+"""
+Can also delete files or folders with os.remove() and os.rmdir().
+Only empty folders can be deleted with os.rmdir().
+"""
+import os
+if os.path.exists("demofile.txt"):
+  os.remove("demofile.txt")
+else:
+  print("The file does not exist")
+
+os.rmdir("myfolder")
+```
+
 ### Functions
 ```python
 """

@@ -42,5 +42,3 @@ print(x >> 4)  # 0000 -> 0
 
 - `x >> 1` is equal to `x // 2` (integer division)
 - `x << 1` is equal to `x * 2`
-
-## Arrays And Strings - See [readme.md](./arrays-and-strings/readme.md)
