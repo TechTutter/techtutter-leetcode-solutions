@@ -9,7 +9,7 @@ exercise:
 		exit 1; \
 	fi; \
 	mkdir -p "$$EXERCISE_NAME"; \
-	echo "# $$EXERCISE_NAME" > "$$EXERCISE_NAME/readme.md"; \
+	echo "# $$EXERCISE_NAME" > "$$EXERCISE_NAME/README.md"; \
 	cp solution_test_template.py "$$EXERCISE_NAME/solution_test.py"; \
 	cp solution_template.py "$$EXERCISE_NAME/solution.py"
 
