@@ -1,5 +1,9 @@
 # techtutter-leetocode-solutions
 
+Total Solved: 33 <!-- LEET_COUNT -->
+
+Automatically updated with pre-commit hook or manually with make update-readme
+
 # Guidelines
 
 Use the makefile to create new exercises. E.g.
@@ -9,10 +13,10 @@ make exercise "999. Test Name"
 
 Solve the exercise inside solution.py and run the tests with pytest.
 ```bash
-make test leetproblems/1.\ Two\ Sum/
+uv run pytest
 ```
 
-# Topics
+# Topic
 
 Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 
