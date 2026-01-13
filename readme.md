@@ -62,11 +62,15 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [13. Roman to Integer](./leetproblems/13.%20Roman%20to%20Integer/)
 - [15. 3Sum](./leetproblems/15.%203Sum/)
 - [36. Valid Sudoku](./leetproblems/36.%20Valid%20Sudoku/)
+- [141. Linked List Cycle](./leetproblems/141.%20Linked%20List%20Cycle/)
 - [169. Majority Element](./leetproblems/169.%20Majority%20Element/)
 - [202. Happy Number](./leetproblems/202.%20Happy%20Number/)
 - [205. Isomorphic Strings](./leetproblems/205.%20Isomorphic%20Strings/)
 - [242. Valid Anagram](./leetproblems/242.%20Valid%20Anagram/)
 - [290. Word Pattern](./leetproblems/290.%20Word%20Pattern/)
+
+## Linked Lists
+- [141. Linked List Cycle](./leetproblems/141.%20Linked%20List%20Cycle/)
 
 ## String
 - [3. Longest Substring Without Repeating Characters](./leetproblems/3.%20Longest%20Substring%20Without%20Repeating%20Characters/)
@@ -94,6 +98,7 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [80. Remove Duplicates from Sorted Array II](./leetproblems/80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II/)
 - [88. Merge Sorted Array](./leetproblems/88.%20Merge%20Sorted%20Array/)
 - [125. Valid Palindrome](./leetproblems/125.%20Valid%20Palindrome/)
+- [141. Linked List Cycle](./leetproblems/141.%20Linked%20List%20Cycle/)
 - [151. Reverse Words in a String](./leetproblems/151.%20Reverse%20Words%20in%20a%20String/)
 - [189. Rotate Array](./leetproblems/189.%20Rotate%20Array/)
 - [202. Happy Number](./leetproblems/202.%20Happy%20Number/)
