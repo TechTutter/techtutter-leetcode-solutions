@@ -2,7 +2,7 @@
 
 > A collection of algorithmic challenges solved with a focus on clean code, efficiency, and automated workflow.
 
-![LeetCode Total](https://img.shields.io/badge/Solved-38-00b8a3?style=for-the-badge&labelColor=24292e&logo=leetcode) <!-- LEET_COUNT -->
+![LeetCode Total](https://img.shields.io/badge/Solved-39-00b8a3?style=for-the-badge&labelColor=24292e&logo=leetcode) <!-- LEET_COUNT -->
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Testing](https://img.shields.io/badge/Tests-Pytest-yellow?style=for-the-badge&logo=pytest)
 
@@ -140,5 +140,6 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 
 ## Tree
 - [100. Same Tree](./leetproblems/100.%20Same%20Tree/)
+- [101. Symmetric Tree](./leetproblems/101.%20Symmetric%20Tree/)
 - [104. Maximum Depth of Binary Tree](./leetproblems/104.%20Maximum%20Depth%20of%20Binary%20Tree/)
 - [226. Invert Binary Tree](./leetproblems/226.%20Invert%20Binary%20Tree/)
