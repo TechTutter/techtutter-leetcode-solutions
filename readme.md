@@ -42,7 +42,6 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [36. Valid Sudoku](./leetproblems/36.%20Valid%20Sudoku/)
 - [42. Trapping Rain Water](./leetproblems/42.%20Trapping%20Rain%20Water/)
 - [45. Jump Game II](./leetproblems/45.%20Jump%20Game%20II/)
-- [54. Spiral Matrix](./leetproblems/54.%20Spiral%20Matrix/)
 - [55. Jump Game](./leetproblems/55.%20Jump%20Game/)
 - [80. Remove Duplicates from Sorted Array II](./leetproblems/80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II/)
 - [88. Merge Sorted Array](./leetproblems/88.%20Merge%20Sorted%20Array/)
@@ -104,12 +103,6 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [202. Happy Number](./leetproblems/202.%20Happy%20Number/)
 - [392. Is Subsequence](./leetproblems/392.%20Is%20Subsequence/)
 
-## Math
-- [12. Integer to Roman](./leetproblems/12.%20Integer%20to%20Roman/)
-- [13. Roman to Integer](./leetproblems/13.%20Roman%20to%20Integer/)
-- [189. Rotate Array](./leetproblems/189.%20Rotate%20Array/)
-- [202. Happy Number](./leetproblems/202.%20Happy%20Number/)
-
 ## Greedy
 - [12. Integer to Roman](./leetproblems/12.%20Integer%20to%20Roman/)
 - [45. Jump Game II](./leetproblems/45.%20Jump%20Game%20II/)
@@ -145,5 +138,7 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [242. Valid Anagram](./leetproblems/242.%20Valid%20Anagram/)
 - [274. H-Index](./leetproblems/274.%20H-Index/)
 
-## Simulation
-- [54. Spiral Matrix](./leetproblems/54.%20Spiral%20Matrix/)
+## Tree
+- [100. Same Tree](./leetproblems/100.%20Same%20Tree/)
+- [104. Maximum Depth of Binary Tree](./leetproblems/104.%20Maximum%20Depth%20of%20Binary%20Tree/)
+- [226. Invert Binary Tree](./leetproblems/226.%20Invert%20Binary%20Tree/)
