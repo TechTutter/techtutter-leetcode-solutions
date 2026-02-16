@@ -9,6 +9,10 @@ exercise:
 		exit 1; \
 	fi; \
 	TARGET_DIR="leetproblems/$$EXERCISE_NAME"; \
+	if [ -d "$$TARGET_DIR" ]; then \
+		echo "Error: Directory $$TARGET_DIR already exists."; \
+		exit 1; \
+	fi; \
 	mkdir -p "$$TARGET_DIR"; \
 	echo "# $$EXERCISE_NAME" > "$$TARGET_DIR/README.md"; \
 	cp solution_test_template.py "$$TARGET_DIR/solution_test.py"; \

@@ -1,16 +1,13 @@
 class Solution:
     """
-    s = s.strip()
-    length = 0
-    for i from len(s)-1 down to 0:
-        if s[i] == ' ': break
-        length++
-    return length
+    count all alphabetic chars starting from the end
+    if the count is 0 and a non-alphabetic char is found, return count
     """
     def lengthOfLastWord(self, s: str) -> int:
-        s = s.strip()
-        l = len(s)
-        for i in range(l - 1, -1, -1):
-            if s[i] == " ":
-                return l - i - 1
-        return l
+        res = 0
+        for i in range(len(s)-1, -1, -1):
+            if s[i] == " " or not s[i].isalpha():
+                if res != 0: return res
+            else:
+                res += 1
+        return res
