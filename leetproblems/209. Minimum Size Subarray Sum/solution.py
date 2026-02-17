@@ -1,26 +1,26 @@
+import math
+
 class Solution:
-    """
-    left = 0, current_sum = 0, min_length = infinity
-    for right from 0 to n-1:
-        current_sum += nums[right]
-        while current_sum >= target:
-            min_length = min(min_length, right - left + 1)
-            current_sum -= nums[left]
-            left++
-    return 0 if min_length is infinity else min_length
-    """
-    def minSubArrayLen(self, target: int, nums: list[int]) -> int:
-        n = len(nums)
-        left = 0
-        curr_sum = 0
-        window = float('inf')
+    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+        """
+        left = 0, window = 0, total = 0
+        for i in range(len(nums)):
+            total += current value
+            while target is reached:
+                store current window size, if lower than current
+                subtract left from total
+                increase left
+        """
+        if target == 0: return 0
+        
+        left = total = 0
+        window = math.inf
 
-        for right in range(n):
-            curr_sum += nums[right]
-
-            while curr_sum >= target:
+        for right, x in enumerate(nums):
+            total += x
+            while total >= target:
                 window = min(window, right - left + 1)
-                curr_sum -= nums[left]
+                total -= nums[left]
                 left += 1
-
-        return 0 if window == float('inf') else window
+        
+        return window if window != math.inf else 0

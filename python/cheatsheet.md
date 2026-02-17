@@ -111,73 +111,9 @@ print(random.randint(3, 9)) # output: random int between 3 and 9
 ```
 
 ### Strings
-```python
-"""
-Strings are indexable and immutable collections of unicode characters. Char data type does not exist in python.
-"""
-text = "Hello, World!"
-print(type(text)) # output: <class 'str'>
-print(len(text))  # output: 41
 
-multi_line_str = """This is a multi-line string.
-Line breaks are preserved."""
+[./strings.md](./strings.md)
 
-CORE_FAMILY_MEMBERS = 7
-formatted_str = f"Tutter family has {CORE_FAMILY_MEMBERS * 4} members"
-
-print("Use + to combine with" + " " + text)
-print("Use \n to add new line")
-print("Use backslash to escape characters like \", \\, or \'")
-
-x = text[0]    # output: "H"
-y = text[-1]   # output: "d"
-z = text[1:5]  # output: "ello"
-
-for c in text:
-    print(c)
-```
-
-```python
-"""
-Most useful string methods are listed here. For full list see https://www.w3schools.com/python/python_strings_methods.asp.
-
-ALL string methods return new strings. They do not modify the original string.
-"""
-text: str = "Apple"
-
-# Casing
-text.upper()        # output: "APPLE"
-text.lower()        # output: "apple"
-
-# Searching
-text.find("p")        # output: Index of first occurrence, -1 if not found.
-text.find("p", 2, 5)  # Can also specify start | end ranges optionally.
-text.startswith("Ap") # output: True
-text.endswith("le")   # output: True
-
-# Cleaning
-text.strip()          # Clean whitespaces around. For left/right only, use lstrip() or rstrip()
-text.replace("p", "") # Replace all occurrences
-text.replace("p", "", 2) # Replace only first 2 occurrences
-
-# Splitting and Joining
-text.split("p")       # split on separator and return list of substrings
-text.splitlines()     # Split at new line and return list of lines e.g. for file reading
-"-".join(text)        # output: "A-p-p-l-e"
-```
-
-```python
-"""
-Regular expressions are used for pattern matching and text processing.
-"""
-import re
-
-text = 'AY12345BZ'
-match = re.search(r"\d+", "A123")          # output: Match object, e.g. if match
-subbed = re.sub("\d", "X", "AY12345BZ")    # output: "AYXXXXXBZ"
-splitted = re.split("\d+", "AB12CD34EF")   # output: ["AB", "CD", "EF"]
-found = re.findall("\d+", "12A34")         # output: ["12", "34"]
-```
 
 ### Lists
 
@@ -525,3 +461,54 @@ except MyException as e:
 - Iterators ( add it to the classes section ) __iter__ and __next__ etc.
 - JSON ( add it to FILES section )
 - For strings, lists etc add that you can use len, typeof, isinstance, slicing, "in" operator, UNPACKING, STAR * OPERATOR (super cool btw), COMPREHENSIONS, loops, product with * of iterable, can work for most of the collections
+
+
+
+
+
+
+
+# Data Structures
+1. LinkedList
+1. HashMap (dict or defaultdict)
+1. Set
+1. MinHeap and MaxHeap
+
+# Core Topics to Master
+1. Arrays, Strings and Two Pointers
+2. Hashmaps with defaultdict for frequency count and lookups, set for membership check
+3. Sliding Windows
+4. Matrix
+5. Stack, Queue, LinkedList, MinHeap, MaxHeap and when to use them
+
+# Advanced Topics to Master
+1. DFS, BFS and binary Tree traversal + height calculation
+1. Trie
+1. BackTracking
+1. Bit Manipulation 
+1. Math
+1. DP
+
+
+
+## Sliding Window
+
+```python
+"""
+Initialize a left = 0.
+Move right pointer with for loop to expand window
+Move left pointer when the condition is met to reduce the window
+"""
+def sliding_window_example(nums: list[int], target: int) -> int:
+    left = total = 0
+    window = math.inf
+
+    for right, x in enumerate(nums):
+        total += x
+        while total >= target:
+            window = min(window, right - left + 1)
+            total -= nums[left]
+            left += 1
+            
+    return window if window != math.inf else 0
+```

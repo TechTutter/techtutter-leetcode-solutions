@@ -1,43 +1,21 @@
 class Solution:
     """
-    prefix = ""
-    while not done:
-        for each string in strs:
-            if string length <= index:
-                done
-            if current_char is None:
-                current_char = string[index]
-            else if current_char != string[index]:
-                done
-        if not done:
-            prefix += current_char
-            index++
-    return prefix
+    if the end of a string is reached, return current prefixes
+    else if a different character is found for index i, return prefixes
+    else simply append the character to prefix list and continue
     """
     def longestCommonPrefix(self, strs: list[str]) -> str:
-        prefix = ""
-        done = False
+        prefix = []
         
-        idx = 0
-        curr_character = None
-        
-        while not done:
-            for w in strs:
-                # if any of the strings is over, break the loop
-                if len(w) <= idx:
-                    done = True
-                    break
-                
-                # initialize curr_char first time, then compare it word by word
-                if curr_character == None:
-                    curr_character = w[idx]
-                    
-                elif curr_character != w[idx]:
-                    done = True
-                    break
-            if not done:
-                prefix = prefix + curr_character    
-                curr_character = None
-                idx = idx + 1
-            
-        return prefix
+        i = 0
+        while True:
+            c = ''
+            for s in strs:
+                if i == len(s):
+                    return ''.join(prefix)
+                if not c:
+                    c = s[i]
+                elif c != s[i]:
+                    return ''.join(prefix)
+            prefix.append(c)
+            i += 1
