@@ -3,6 +3,26 @@ Generic trees per se are not particularly useful. In problem solving, we general
 
 Operations like search, insertion, and deletion work in O(Log n) time for a balanced binary search tree. In the worst-case (unbalanced), these degrade to O(n). With self-balancing BSTs like AVL and Red Black Trees, we can ensure the worst case as O(Log n).
 
+## Recursion and Early Returns
+
+> IMPORTANT: When doing a boolean check, an OR logic allows for the full exploration (because the exploration will continue until everything is False, it needs to explore all nodes before stopping), while also allowing for early returns, because as soon as a True is found, the boolean short cirtuits
+
+```python
+class Solution:
+    def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
+        if not root:
+            return False
+        
+        # Se è una foglia
+        if not root.left and not root.right:
+            return root.val == targetSum
+        
+        return (
+            self.hasPathSum(root.left, targetSum - root.val) or
+            self.hasPathSum(root.right, targetSum - root.val)
+        )
+```
+
 ## Traversal
 
 ### Depth Traversal
