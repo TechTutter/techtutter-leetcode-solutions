@@ -131,6 +131,7 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [101. Symmetric Tree](./leetproblems/101.%20Symmetric%20Tree/)
 - [114. Flatten Binary Tree to Linked List](./leetproblems/114.%20Flatten%20Binary%20Tree%20to%20Linked%20List/)
 - [112. Path Sum](./leetproblems/112.%20Path%20Sum/)
+- [129. Sum Root to Leaf Numbers](./leetproblems/129.%20Sum%20Root%20to%20Leaf%20Numbers/)
 - [173. Binary Search Tree Iterator](./leetproblems/173.%20Binary%20Search%20Tree%20Iterator/)
 - [222. Count Complete Tree Nodes](./leetproblems/222.%20Count%20Complete%20Tree%20Nodes/)
 
