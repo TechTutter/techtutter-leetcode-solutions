@@ -2,7 +2,7 @@
 
 > A collection of algorithmic challenges solved with a focus on clean code, efficiency, and automated workflow.
 
-![LeetCode Total](https://img.shields.io/badge/Solved-85-00b8a3?style=for-the-badge&labelColor=24292e&logo=leetcode) <!-- LEET_COUNT -->
+![LeetCode Total](https://img.shields.io/badge/Solved-86-00b8a3?style=for-the-badge&labelColor=24292e&logo=leetcode) <!-- LEET_COUNT -->
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Testing](https://img.shields.io/badge/Tests-Pytest-yellow?style=for-the-badge&logo=pytest)
 
@@ -150,5 +150,6 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 ## Math
 
 - [9. Palindrome Number](./leetproblems/9.%20Palindrome%20Number/)
+- [66. Plus One](./leetproblems/66.%20Plus%20One/)
 
 > All numbers checked Until LinkedLists
