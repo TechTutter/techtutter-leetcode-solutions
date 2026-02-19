@@ -2,7 +2,7 @@
 
 > A collection of algorithmic challenges solved with a focus on clean code, efficiency, and automated workflow.
 
-![LeetCode Total](https://img.shields.io/badge/Solved-81-00b8a3?style=for-the-badge&labelColor=24292e&logo=leetcode) <!-- LEET_COUNT -->
+![LeetCode Total](https://img.shields.io/badge/Solved-83-00b8a3?style=for-the-badge&labelColor=24292e&logo=leetcode) <!-- LEET_COUNT -->
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Testing](https://img.shields.io/badge/Tests-Pytest-yellow?style=for-the-badge&logo=pytest)
 
@@ -139,6 +139,7 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 
 ## Binary Tree BFS
 
+- [199. Binary Tree Right Side View](./leetproblems/199.%20Binary%20Tree%20Right%20Side%20View/)
 - [637. Average of Levels in Binary Tree](./leetproblems/637.%20Average%20of%20Levels%20in%20Binary%20Tree/)
 
 ## Bit Manipulation
