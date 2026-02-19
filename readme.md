@@ -114,10 +114,13 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [141. Linked List Cycle](./leetproblems/141.%20Linked%20List%20Cycle/)
 - [2. Add Two Numbers](./leetproblems/2.%20Add%20Two%20Numbers/)
 - [21. Merge Two Sorted Lists](./leetproblems/21.%20Merge%20Two%20Sorted%20Lists/)
+- [138. Copy List with Random Pointer](./leetproblems/138.%20Copy%20List%20with%20Random%20Pointer/)
 - [92. Reverse Linked List II](./leetproblems/92.%20Reverse%20Linked%20List%20II/)
+- [25. Reverse Nodes in k-Group](./leetproblems/25.%20Reverse%20Nodes%20in%20k-Group/)
 - [19. Remove Nth Node From End of List](./leetproblems/19.%20Remove%20Nth%20Node%20From%20End%20of%20List/)
 - [82. Remove Duplicates from Sorted List II](./leetproblems/82.%20Remove%20Duplicates%20from%20Sorted%20List%20II/)
 - [61. Rotate List](./leetproblems/61.%20Rotate%20List/)
+- [86. Partition List](./leetproblems/86.%20Partition%20List/)
 - [146. LRU Cache](./leetproblems/146.%20LRU%20Cache/)
 
 ## Binary Tree General
@@ -127,6 +130,7 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [226. Invert Binary Tree](./leetproblems/226.%20Invert%20Binary%20Tree/)
 - [101. Symmetric Tree](./leetproblems/101.%20Symmetric%20Tree/)
 - [114. Flatten Binary Tree to Linked List](./leetproblems/114.%20Flatten%20Binary%20Tree%20to%20Linked%20List/)
+- [112. Path Sum](./leetproblems/112.%20Path%20Sum/)
 - [222. Count Complete Tree Nodes](./leetproblems/222.%20Count%20Complete%20Tree%20Nodes/)
 
 ## Binary Tree BFS
