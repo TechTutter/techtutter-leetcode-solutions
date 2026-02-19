@@ -2,7 +2,7 @@
 
 > A collection of algorithmic challenges solved with a focus on clean code, efficiency, and automated workflow.
 
-![LeetCode Total](https://img.shields.io/badge/Solved-78-00b8a3?style=for-the-badge&labelColor=24292e&logo=leetcode) <!-- LEET_COUNT -->
+![LeetCode Total](https://img.shields.io/badge/Solved-81-00b8a3?style=for-the-badge&labelColor=24292e&logo=leetcode) <!-- LEET_COUNT -->
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Testing](https://img.shields.io/badge/Tests-Pytest-yellow?style=for-the-badge&logo=pytest)
 
@@ -131,6 +131,7 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [101. Symmetric Tree](./leetproblems/101.%20Symmetric%20Tree/)
 - [114. Flatten Binary Tree to Linked List](./leetproblems/114.%20Flatten%20Binary%20Tree%20to%20Linked%20List/)
 - [112. Path Sum](./leetproblems/112.%20Path%20Sum/)
+- [173. Binary Search Tree Iterator](./leetproblems/173.%20Binary%20Search%20Tree%20Iterator/)
 - [222. Count Complete Tree Nodes](./leetproblems/222.%20Count%20Complete%20Tree%20Nodes/)
 
 ## Binary Tree BFS
@@ -144,6 +145,3 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 ## Math
 
 - [9. Palindrome Number](./leetproblems/9.%20Palindrome%20Number/)
-
-
-HAPPY NUMBER
