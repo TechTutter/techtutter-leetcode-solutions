@@ -11,7 +11,7 @@ def traverse_preorder(node):
     return [node.val] + traverse_preorder(node.left) + traverse_preorder(node.right)
 
 class TestSolution():
-    def test_testcase1():
+    def test_testcase1(self):
         preorder = [3,9,20,15,7]
         inorder = [9,3,15,20,7]
         s = Solution()
@@ -20,7 +20,7 @@ class TestSolution():
         assert(traverse_inorder(n) == inorder)
         assert(traverse_preorder(n) == preorder)
 
-    def test_testcase2():
+    def test_testcase2(self):
         preorder = [-1]
         inorder = [-1]
         s = Solution()

@@ -5,26 +5,26 @@ def traverse_inorder(node):
         return []
     return traverse_inorder(node.left) + [node.val] + traverse_inorder(node.right)
 
-def traverse_preorder(node):
+def traverse_postorder(node):
     if not node:
         return []
-    return [node.val] + traverse_preorder(node.left) + traverse_preorder(node.right)
+    return traverse_postorder(node.left) + traverse_postorder(node.right) + [node.val]
 
 class TestSolution():
-    def test_testcase1():
-        preorder = [3,9,20,15,7]
+    def test_testcase1(self):
         inorder = [9,3,15,20,7]
+        postorder = [9,15,7,20,3]
         s = Solution()
-        n = s.buildTree(preorder, inorder)
+        n = s.buildTree(inorder, postorder)
 
-        assert(traverse_inorder(n) == inorder)
-        assert(traverse_preorder(n) == preorder)
+        assert traverse_inorder(n) == inorder
+        assert traverse_postorder(n) == postorder
 
-    def test_testcase2():
-        preorder = [-1]
+    def test_testcase2(self):
         inorder = [-1]
+        postorder = [-1]    
         s = Solution()
-        n = s.buildTree(preorder, inorder)
+        n = s.buildTree(inorder, postorder)
 
-        assert(traverse_inorder(n) == inorder)
-        assert(traverse_preorder(n) == preorder)
+        assert traverse_inorder(n) == inorder
+        assert traverse_postorder(n) == postorder
