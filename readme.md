@@ -13,18 +13,23 @@
 This repository uses a custom automation system to maintain consistency and speed up the problem-solving process.
 
 ### Creation & Setup
+
 To bootstrap a new challenge:
+
 ```bash
 make exercise "Number. Problem Title"
 ```
 
 ### Development & Testing
+
 Solutions are developed in Python and verified using `pytest`. Environment management is handled by `uv`:
+
 ```bash
 uv run pytest
 ```
 
 ### Automation
+
 The repository includes a Git pre-commit hook that automatically updates the problem count in the README whenever a new solution is committed.
 
 ---
@@ -36,6 +41,7 @@ List of problems from "Top 150 Interview" + Others extra marked with `*extra`
 Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 
 ## Array / Strings
+
 - [88. Merge Sorted Array](./leetproblems/88.%20Merge%20Sorted%20Array/)
 - [27. Remove Element](./leetproblems/27.%20Remove%20Element/)
 - [26. Remove Duplicates from Sorted Array](./leetproblems/26.%20Remove%20Duplicates%20from%20Sorted%20Array/)
@@ -61,11 +67,11 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [28. Find the Index of The First Occurrence in a String](./leetproblems/28.%20Find%20the%20Index%20of%20The%20First%20Occurrence%20in%20a%20String/)
 - [68. Text Justification](./leetproblems/68.%20Text%20Justification/)
 
-- [5. Longest Palindromic Substring](./leetproblems/5.%20Longest%20Palindromic%20Substring/) *extra
-- [843. Guess the Word](./leetproblems/843.%20Guess%20the%20Word/) *extra
-
+- [5. Longest Palindromic Substring](./leetproblems/5.%20Longest%20Palindromic%20Substring/) \*extra
+- [843. Guess the Word](./leetproblems/843.%20Guess%20the%20Word/) \*extra
 
 ## Two Pointers
+
 - [125. Valid Palindrome](./leetproblems/125.%20Valid%20Palindrome/)
 - [392. Is Subsequence](./leetproblems/392.%20Is%20Subsequence/)
 - [167. Two Sum II - Input Array Is Sorted](./leetproblems/167.%20Two%20Sum%20II%20-%20Input%20Array%20Is%20Sorted/)
@@ -134,6 +140,8 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [100. Same Tree](./leetproblems/100.%20Same%20Tree/)
 - [226. Invert Binary Tree](./leetproblems/226.%20Invert%20Binary%20Tree/)
 - [101. Symmetric Tree](./leetproblems/101.%20Symmetric%20Tree/)
+- [105. Construct Binary Tree from Preorder and Inorder Traversal](./leetproblems/105.%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal/)
+- [106. Construct Binary Tree from Inorder and Postorder Traversal](./leetproblems/106.%20Construct%20Binary%20Tree%20from%20Inorder%20and%20Postorder%20Traversal/)
 - [117. Populating Next Right Pointers in Each Node II](./leetproblems/117.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node%20II/)
 - [114. Flatten Binary Tree to Linked List](./leetproblems/114.%20Flatten%20Binary%20Tree%20to%20Linked%20List/)
 - [112. Path Sum](./leetproblems/112.%20Path%20Sum/)
@@ -141,12 +149,36 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [124. Binary Tree Maximum Path Sum](./leetproblems/124.%20Binary%20Tree%20Maximum%20Path%20Sum/)
 - [173. Binary Search Tree Iterator](./leetproblems/173.%20Binary%20Search%20Tree%20Iterator/)
 - [222. Count Complete Tree Nodes](./leetproblems/222.%20Count%20Complete%20Tree%20Nodes/)
+- [236. Lowest Common Ancestor of a Binary Tree](./leetproblems/236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree/)
 
 ## Binary Tree BFS
 
 - [199. Binary Tree Right Side View](./leetproblems/199.%20Binary%20Tree%20Right%20Side%20View/)
 - [637. Average of Levels in Binary Tree](./leetproblems/637.%20Average%20of%20Levels%20in%20Binary%20Tree/)
 - [102. Binary Tree Level Order Traversal](./leetproblems/102.%20Binary%20Tree%20Level%20Order%20Traversal/)
+- [103. Binary Tree Zigzag Level Order Traversal](./leetproblems/103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal/)
+
+## Binary Search Tree
+
+- [530. Minimum Absolute Difference in BST](./leetproblems/530.%20Minimum%20Absolute%20Difference%20in%20BST/)
+- [230. Kth Smallest Element in a BST](./leetproblems/230.%20Kth%20Smallest%20Element%20in%20a%20BST/)
+- [98. Validate Binary Search Tree](./leetproblems/98.%20Validate%20Binary%20Search%20Tree/)
+
+## Trie
+
+- [208. Implement Trie (Prefix Tree)](./leetproblems/208.%20Implement%20Trie%20Prefix%20Tree/)
+- [211. Design Add and Search Words Data Structure](./leetproblems/211.%20Design%20Add%20and%20Search%20Words%20Data%20Structure/)
+- [212. Word Search II](./leetproblems/212.%20Word%20Search%20II/)
+
+## Binary Search
+
+- [35. Search Insert Position](./leetproblems/35.%20Search%20Insert%20Position/)
+- [74. Search a 2D Matrix](./leetproblems/74.%20Search%20a%202D%20Matrix/)
+- [162. Find Peak Element](./leetproblems/162.%20Find%20Peak%20Element/)
+- [33. Search in Rotated Sorted Array](./leetproblems/33.%20Search%20in%20Rotated%20Sorted%20Array/)
+- [34. Find First and Last Position of Element in Sorted Array](./leetproblems/34.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/)
+- [153. Find Minimum in Rotated Sorted Array](./leetproblems/153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array/)
+- [4. Median of Two Sorted Arrays](./leetproblems/4.%20Median%20of%20Two%20Sorted%20Arrays/)
 
 ## Bit Manipulation
 
@@ -157,4 +189,4 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [9. Palindrome Number](./leetproblems/9.%20Palindrome%20Number/)
 - [66. Plus One](./leetproblems/66.%20Plus%20One/)
 
-> All numbers checked Until LinkedLists
+> All numbers checked Until Binary Search Tree
