@@ -2,7 +2,7 @@
 
 > A collection of algorithmic challenges solved with a focus on clean code, efficiency, and automated workflow.
 
-![LeetCode Total](https://img.shields.io/badge/Solved-92-00b8a3?style=for-the-badge&labelColor=24292e&logo=leetcode) <!-- LEET_COUNT -->
+![LeetCode Total](https://img.shields.io/badge/Solved-97-00b8a3?style=for-the-badge&labelColor=24292e&logo=leetcode) <!-- LEET_COUNT -->
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Testing](https://img.shields.io/badge/Tests-Pytest-yellow?style=for-the-badge&logo=pytest)
 
@@ -31,6 +31,8 @@ The repository includes a Git pre-commit hook that automatically updates the pro
 
 # Topics
 
+List of problems from "Top 150 Interview" + Others extra marked with `*extra`
+
 Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 
 ## Array / Strings
@@ -58,6 +60,9 @@ Quick Link to Paste (internal use) -> - [1.](./leetproblems/)
 - [6. Zigzag Conversion](./leetproblems/6.%20Zigzag%20Conversion/)
 - [28. Find the Index of The First Occurrence in a String](./leetproblems/28.%20Find%20the%20Index%20of%20The%20First%20Occurrence%20in%20a%20String/)
 - [68. Text Justification](./leetproblems/68.%20Text%20Justification/)
+
+- [5. Longest Palindromic Substring](./leetproblems/5.%20Longest%20Palindromic%20Substring/) *extra
+- [843. Guess the Word](./leetproblems/843.%20Guess%20the%20Word/) *extra
 
 
 ## Two Pointers
