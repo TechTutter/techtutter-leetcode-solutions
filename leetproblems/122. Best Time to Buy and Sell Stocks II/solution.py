@@ -1,12 +1,14 @@
 class Solution:
-    """
-    total_profit = 0
-    for i from 1 to len(prices) - 1:
-        if prices[i] > prices[i-1]:
-            total_profit += prices[i] - prices[i-1]
-    return total_profit
-    """
-    def maxProfit(self, prices: list[int]) -> int:
+    def maxProfit(self, prices: List[int]) -> int:
+        n = len(prices)
+        max_gain = 0
+        for i in range(1, n):
+            gain = prices[i] - prices[i-1]
+            max_gain = max(0, gain) + max_gain
+        return max_gain
+        
+
+    def maxProfit_naive(self, prices: list[int]) -> int:
         if(len(prices) < 2):
             return 0
 
