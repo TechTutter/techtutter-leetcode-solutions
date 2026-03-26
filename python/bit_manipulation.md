@@ -21,6 +21,7 @@ x = 23
 x << 1 # 46 - equiv to x * 2
 x >> 1 # 11 - equiv to math.floor(x / 2)
 ```
+
 ## XOR
 ```python
 """
